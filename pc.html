@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue des PC</title>
+</head>
+<body>
+    <header>
+        <p><strong>HTS</strong> <a href="index.html">HighTechStore</a></p>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="pc.html">PC</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="infos.html">Infos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Catalogue des ordinateurs</h1>
+
+        <section>
+            <h2>Rechercher un ordinateur</h2>
+            <form action="pc.html">
+                <p>
+                    <label for="mot-cle">Recherche par mot-clé :</label>
+                    <input type="search" id="mot-cle" name="mot-cle" placeholder="Ex. Gaming, Intel, Lenovo">
+                </p>
+                <p>
+                    <label for="tri">Trier par prix :</label>
+                    <select id="tri" name="tri">
+                        <option value="croissant">Prix croissant</option>
+                        <option value="decroissant">Prix décroissant</option>
+                    </select>
+                </p>
+                <button type="submit">Filtrer</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Ordinateurs disponibles</h2>
+            <table>
+                <caption>Catalogue des ordinateurs HighTechStore</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Référence</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">REF-PC001</th>
+                        <td>
+                            <ul>
+                                <li>Modèle : Lenovo ThinkPad E16</li>
+                                <li>Processeur : Intel Core Ultra 7</li>
+                                <li>Mémoire RAM : 16 Go DDR5</li>
+                                <li>Stockage : 512 Go SSD NVMe</li>
+                                <li>Écran : 16 pouces FHD+</li>
+                            </ul>
+                        </td>
+                        <td>2 450 TND</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">REF-PC002</th>
+                        <td>
+                            <ul>
+                                <li>Modèle : ASUS ROG Strix</li>
+                                <li>Processeur : AMD Ryzen 7 7735HS</li>
+                                <li>Carte graphique : NVIDIA RTX 4060 8 Go</li>
+                                <li>Mémoire RAM : 32 Go DDR5</li>
+                                <li>Stockage : 1 To SSD NVMe</li>
+                            </ul>
+                        </td>
+                        <td>3 890 TND</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">REF-PC003</th>
+                        <td>
+                            <ul>
+                                <li>Modèle : HP ProDesk 400 G9</li>
+                                <li>Processeur : Intel Core i5-13500</li>
+                                <li>Mémoire RAM : 8 Go DDR4</li>
+                                <li>Stockage : 256 Go SSD</li>
+                                <li>Inclus : clavier et souris filaires</li>
+                            </ul>
+                        </td>
+                        <td>1 620 TND</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 HighTechStore - Tous droits réservés | Auteur : Votre nom et prénom</p>
+    </footer>
+</body>
+</html>
