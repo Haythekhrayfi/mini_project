@@ -4,80 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <header>
-        <p><strong>HTS</strong> <a href="index.html">HighTechStore</a></p>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="pc.html">PC</a>
-            <a href="inscription.html">Inscription</a>
-            <a href="infos.html">Infos</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-    </header>
+    <div class="container">
 
-    <main>
-        <section>
-            <h1>Présentation de l'entreprise</h1>
-            <p>Bienvenue chez <strong>HighTechStore</strong>, votre spécialiste de la vente de matériel informatique de qualité.</p>
-            <p>Nous proposons aux particuliers et aux professionnels des ordinateurs, des composants et des accessoires adaptés à leurs besoins et à leur budget.</p>
-            <p>Découvrez notre sélection et profitez de notre service après-vente.</p>
-        </section>
+        <header>
+            <p class="hts"><strong class="logo">HTS</strong> <a href="index.html" class="t">HighTechStore</a></p>
+            <nav>
+                <a href="index.html" class="active">Accueil</a>
+                <a href="/pages/pc.html">PC</a>
+                <a href="/pages/inscription.html">Inscription</a>
+                <a href="/pages/infos.html">Infos</a>
+                <a href="/pages/contact.html">Contact</a>
+            </nav>
+        </header>
 
-        <section>
-            <h2>Nos catégories de produits</h2>
-            <p>Parcourez notre catalogue de matériel informatique :</p>
-            <ul>
-                <li><strong>Ordinateurs et portables</strong>
-                    <ul>
-                        <li><a href="pc.html">PC de bureau et PC portables</a></li>
-                        <li>PC Gamer et stations de travail</li>
-                        <li>Accessoires PC
-                            <ol>
-                                <li>Souris avec ou sans fil</li>
-                                <li>Claviers mécaniques et ergonomiques</li>
-                                <li>Tapis de souris et supports PC</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </li>
-                <li><strong>Impression et numérisation</strong>
-                    <ul>
-                        <li>Imprimantes à jet d'encre</li>
-                        <li>Imprimantes laser</li>
-                        <li>Imprimantes multifonctions</li>
-                        <li>Scanners à plat et scanners portables</li>
-                    </ul>
-                </li>
-                <li><strong>Périphériques et affichage</strong>
-                    <ul>
-                        <li>Écrans et moniteurs (FHD, 2K, 4K)</li>
-                        <li>Disques externes, SSD portables et clés USB</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+        <main class="main1">
+            <section class="card">
+                <h1>Présentation de l'entreprise</h1>
+                <p>Bienvenue chez <strong>HighTechStore</strong>, votre spécialiste et référence incontournable dans la vente de</p>
+                <p>matériel informatique de haute qualité. Depuis notre création, nous nous engageons à fournir aux</p>
+                <p>particuliers comme aux professionnels des équipements performants adaptés à tous les besoins et à tous les budgets.</p>
+                <p>Découvrez notre vaste sélection de composants, d'ordinateurs de bureau, de portables et</p>
+                <p>d'accessoires de dernière génération avec un service après-vente irréprochable.</p>
+            </section>
 
-        
-    </main>
-<aside>
-            <h2>Espace connexion</h2>
+            <section class="card">
+                <h2>Nos Catégories de Produits</h2>
+                <p>Parcourez notre catalogue structuré par catégories de matériel informatique :</p>
+                <ul>
+                    <li><strong>Ordinateurs et Portables</strong>
+                        <ul>
+                            <li><a href="/pages/pc.html">PC de bureau et PC portables (Accéder à la page PC)</a></li>
+                            <li>PC Gamer &amp; Stations de travail</li>
+                            <li>Accessoires PC
+                                <ol>
+                                    <li>Souris (Filaire &amp; Sans fil)</li>
+                                    <li>Claviers (Mécaniques &amp; Ergonomiques)</li>
+                                    <li>Tapis de souris &amp; Support PC</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Impression et Numérisation</strong>
+                        <ul>
+                            <li>Imprimantes
+                                <ul>
+                                    <li>Imprimantes Jet d'encre</li>
+                                    <li>Imprimantes Laser (Monochrome & Couleur)</li>
+                                    <li>Imprimantes Multifonctions</li>
+                                </ul>
+                            </li>
+                            <li>Scanners (Scanners à plat &amp; Scanners portables)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Périphériques &amp; Affichage</strong>
+                        <ul>
+                            <li>Écrans et Moniteurs (FHD, 2K, 4K)</li>
+                            <li>Stockage externe (Disques durs externes, SSD portables, Clés USB)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="card">
+            <h2>Espace Connexion</h2>
             <form>
                 <p>
-                    <label>Identifiant :</label><br>
-                    <input type="text" name="login" placeholder="Votre identifiant">
+                    <label for="login">Identifiant (Login) :</label><br>
+                    <input type="text" placeholder="Votre identifiant">
                 </p>
                 <p>
-                    <label >Mot de passe :</label><br>
-                    <input type="password" name="mot-de-passe" placeholder="Votre mot de passe">
+                    <label for="pass">Mot de passe :</label><br>
+                    <input type="password"  placeholder="Votre mot de passe">
                 </p>
-                <button type="button">Se connecter</button>
+               <button>se connecter</button>
             </form>
-            <p>Pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici.</a></p>
+            <hr>
+            <p>Pas encore de compte ? <a href="/pages/inscription.html">Inscrivez-vous ici.</a></p>
         </aside>
-    <footer>
-        <p>© 2026 HighTechStore - Tous droits réservés | Auteur : Votre nom et prénom</p>
-    </footer>
+
+        <footer>
+            <p>© 2026 HighTechStore - Tous droits réservés | Auteur : Votre nom et prénom</p>
+        </footer>
+
+    </div>
 </body>
 </html>

@@ -3,110 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informations - HighTechStore</title>
+    <title>Informations</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <header>
-        <p><strong>HTS</strong> <a href="index.html">HighTechStore</a></p>
+<div class="container">
+<header>
+        <p class="hts"><strong class="logo">HTS</strong> <a href="../index.html" class="t">HighTechStore</a></p>
         <nav>
-            <a href="index.html">Accueil</a>
+            <a href="../index.html">Accueil</a>
             <a href="pc.html">PC</a>
             <a href="inscription.html">Inscription</a>
-            <a href="infos.html">Infos</a>
-            <a href="pages/contact.html">Contact</a>
+            <a href="infos.html" class="active">Infos</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h1>Informations générales</h1>
+    <main class="main2">
+        <section class="card">
+            <h1>Informations Générales</h1>
             <p><strong>Gérant :</strong> M. Mohamed Ali</p>
             <p><strong>Adresse :</strong> Rue des Technologies, Charguia 2, 2035 Tunis, Tunisie</p>
-            <p><strong>Téléphone :</strong> <a href="tel:+21671000000">+216 71 000 000</a></p>
+            <p><strong>Téléphone :</strong> +216 71 000 000</p>
         </section>
 
-        <section>
-            <h2>Glossaire technique</h2>
+        <section class="card">
+            <h2>Glossaire Technique</h2>
             <p>Quelques définitions pour vous aider à mieux choisir votre matériel informatique :</p>
             <dl>
                 <dt>Processeur (CPU)</dt>
-                <dd>Le cerveau de l'ordinateur. Il exécute les instructions des programmes et effectue les calculs.</dd>
+                <dd>Le cerveau de l'ordinateur qui exécute les instructions des programmes et effectue tous les calculs.</dd>
 
                 <dt>Mémoire RAM</dt>
-                <dd>Une mémoire rapide utilisée par l'ordinateur pour garder les données en cours d'utilisation.</dd>
+                <dd>Espace de stockage temporaire à très haute vitesse utilisé par le processeur pour stocker les données en cours de traitement.</dd>
 
                 <dt>SSD NVMe</dt>
-                <dd>Un espace de stockage rapide qui permet de lire et d'enregistrer les fichiers.</dd>
+                <dd>Unité de stockage flash de dernière génération offrant des vitesses de lecture et d'écriture nettement supérieures aux disques durs mécaniques classiques.</dd>
 
-                <dt>Carte graphique (GPU)</dt>
-                <dd>Un composant qui aide l'ordinateur à afficher des images, des vidéos et des jeux.</dd>
+                <dt>Carte Graphique (GPU)</dt>
+                <dd>Composant dédié à la création et au traitement de la synthèse d'images, indispensable pour le jeu vidéo et la modélisation 3D.</dd>
 
                 <dt>Écran FHD+</dt>
-                <dd>Un écran haute définition qui offre une image nette pour le travail et les loisirs.</dd>
+                <dd>Affichage Haute Définition proposant une résolution optimale pour le confort visuel professionnel et multimédia.</dd>
             </dl>
         </section>
 
-        <section>
+        <section class="card">
             <h2>Horaires d'ouverture</h2>
             <table>
-                <caption>Horaires d'ouverture du magasin</caption>
                 <thead>
                     <tr>
-                        <th>Saison</th>
-                        <th >Jour</th>
-                        <th>Horaires habituels</th>
-                        <th >Ramadan</th>
-                        <th>Autre période</th>
+                        <th colspan="5">HORAIRES D’OUVERTURE</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th >Été</th>
-                        <td>Lundi à vendredi</td>
+                        <td rowspan="4" class="seson">Horaire d’Été</td>
+                        <td></td>
+                        <td>Lundi à Vendredi</td>
+                        <td>Ramadan</td>
+                        <td>Autre</td>
+                    </tr>
+                    <tr>
                         <td>8h00 à 16h00</td>
                         <td>8h00 à 12h00</td>
                         <td>14h00 à 18h00</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <th>Été</th>
                         <td>Samedi</td>
                         <td>9h00 à 15h00</td>
                         <td>8h00 à 12h00</td>
                         <td>15h00 à 20h00</td>
                     </tr>
                     <tr>
-                        <th >Été</th>
                         <td>Dimanche</td>
                         <td>10h00 à 15h00</td>
                         <td>9h00 à 16h00</td>
-                        <td>22h00 à 00h00</td>
+                        <td>22h00 à 00h.00</td>
                     </tr>
                     <tr>
-                        <th>Hiver</th>
-                        <td>Lundi à vendredi</td>
+                        <td rowspan="3" class="seson">Horaire d’Hiver</td>
+                        <td>Lundi à Vendredi</td>
                         <td>9h00 à 12h00</td>
                         <td>15h00 à 18h00</td>
                         <td>20h00 à 23h00</td>
                     </tr>
                     <tr>
-                        <th >Hiver</th>
                         <td>Samedi</td>
                         <td>8h00 à 18h00</td>
                         <td>20h00 à 23h00</td>
-                        <td>Non précisé</td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <th >Hiver</th>
                         <td>Dimanche</td>
-                        <td>Fermé</td>
+                        <td colspan="3">Fermé</td>
                     </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
+</div>
+    
     <footer>
         <p>© 2026 HighTechStore - Tous droits réservés | Auteur : Votre nom et prénom</p>
     </footer>
+
 </body>
 </html>

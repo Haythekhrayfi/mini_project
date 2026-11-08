@@ -3,43 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - HighTechStore</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <header>
-        <p><strong>HTS</strong> <a href="../index.html">HighTechStore</a></p>
-        <nav>
-            <a href="../index.html">Accueil</a>
-            <a href="../pc.html">PC</a>
-            <a href="../inscription.html">Inscription</a>
-            <a href="../infos.html">Infos</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+    <div class="container">
 
-    <main>
-        <h1>Contact et aide</h1>
-        <p>Vous avez une question sur un ordinateur ou un accessoire ? Contactez notre magasin.</p>
+        <header>
+            <p class="hts"><strong class="logo">HTS</strong> <a href="../index.html" class="t">HighTechStore</a></p>
+            <nav>
+                <a href="../index.html">Accueil</a>
+                <a href="pc.html">PC</a>
+                <a href="inscription.html">Inscription</a>
+                <a href="infos.html">Infos</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </header>
 
-        <section>
-            <h2>Nos coordonnées</h2>
-            <address>
-                HighTechStore<br>
-                Rue des Technologies, Charguia 2<br>
-                2035 Tunis, Tunisie<br>
-                Téléphone : <a href="tel:+21671000000">+216 71 000 000</a>
-            </address>
-        </section>
+        <main>
+            <section class="card">
+                <h1>Contact et aide</h1>
+                <p>Vous avez une question sur un ordinateur ou un accessoire ? Contactez notre magasin.</p>
 
-        <section>
-            <h2>Voir le catalogue</h2>
-            <p><a href="../pc.html">Consulter les ordinateurs disponibles</a></p>
-            <p><a href="../infos.html">Consulter les informations et horaires</a></p>
-        </section>
-    </main>
+                <h2>Nos coordonnées</h2>
+                <address>
+                    <strong>HighTechStore</strong><br>
+                    Rue des Technologies, Charguia 2<br>
+                    2035 Tunis, Tunisie<br>
+                    <strong>Téléphone :</strong> <a href="tel:+21671000000">+216 71 000 000</a>
+                </address>
+            </section>
 
-    <footer>
-        <p>© 2026 HighTechStore - Tous droits réservés | Auteur : Votre nom et prénom</p>
-    </footer>
+            <section class="card">
+                <h2>Envoyez-nous un message</h2>
+                <form class="inscription">
+                    <div>
+                        <label >Nom :</label>
+                        <input type="text" id="nom">
+                    </div>
+                    <div>
+                        <label >Adresse E-mail :</label>
+                        <input type="email"  placeholder="nom@exemple.com">
+                    </div>
+                    <div>
+                        <label >Sujet :</label>
+                        <select >
+                            <option>Question sur un produit</option>
+                            <option>Commande</option>
+                            <option>Service après-vente</option>
+                        </select>
+                    </div>
+                    <div class="full">
+                        <label>Message :</label>
+                        <textarea rows="5" placeholder="Votre message..."></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>Voir le catalogue</h2>
+                <p><a href="pc.html">Consulter les ordinateurs disponibles</a></p>
+                <p><a href="infos.html">Consulter les informations et horaires</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 HighTechStore - Tous droits réservés | Auteur : Votre nom et prénom</p>
+        </footer>
+
+    </div>
 </body>
 </html>
