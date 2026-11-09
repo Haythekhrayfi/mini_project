@@ -169,10 +169,6 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin: 0;
-}
-
 /*page infos*/
 dt {
     display: flex;
@@ -279,9 +275,14 @@ img {
         gap: 25px;
     }
 
-    header,
+    header {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+
     footer {
         grid-column: 1 / -1;
+        grid-row: 3;
     }
 
     main {
