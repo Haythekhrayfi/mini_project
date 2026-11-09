@@ -264,7 +264,7 @@ img {
 }
 
 .search button {
-    align-self: flex-start;
+    width: 150px;
 }
 
 /*web*/
